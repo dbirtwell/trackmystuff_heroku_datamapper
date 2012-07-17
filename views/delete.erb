@@ -1,0 +1,10 @@
+<% if @item %>
+	<p>Are you sure you want to delete the following item: <em>"<%= @item.name %>"</em>?</p>
+	<form action="/<%= @item.id %>" method="post">
+		<input type="hidden" name="_method" value="delete">
+		<input type="submit" value="Yes, Delete It!">
+		<a href="/">Cancel</a>
+	</form>
+<% else %>
+	<p>Item not found.</p>
+<% end %>
