@@ -1,0 +1,78 @@
+2012-07-23T16:02:57+00:00 heroku[slugc]: Slug compilation started
+2012-07-23T16:04:52+00:00 heroku[api]: Add shared-database:5mb add-on by dbirtwell@comcast.net
+2012-07-23T16:04:52+00:00 heroku[api]: Release v2 created by dbirtwell@comcast.net
+2012-07-23T16:04:52+00:00 heroku[api]: Add LANG, PATH, RACK_ENV, GEM_PATH config by dbirtwell@comcast.net
+2012-07-23T16:04:52+00:00 heroku[api]: Release v3 created by dbirtwell@comcast.net
+2012-07-23T16:04:52+00:00 heroku[api]: Release v4 created by dbirtwell@comcast.net
+2012-07-23T16:04:52+00:00 heroku[api]: Deploy a0793da by dbirtwell@comcast.net
+2012-07-23T16:04:53+00:00 heroku[web.1]: Starting process with command `bundle exec rackup config.ru -p 42537`
+2012-07-23T16:04:55+00:00 app[web.1]: [2012-07-23 16:04:55] INFO  WEBrick 1.3.1
+2012-07-23T16:04:55+00:00 app[web.1]: [2012-07-23 16:04:55] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2012-07-23T16:04:55+00:00 app[web.1]: [2012-07-23 16:04:55] INFO  WEBrick::HTTPServer#start: pid=2 port=42537
+2012-07-23T16:04:56+00:00 heroku[web.1]: State changed from starting to up
+2012-07-23T16:04:58+00:00 heroku[slugc]: Slug compilation finished
+2012-07-23T16:06:30+00:00 app[web.1]: WARN: tilt autoloading 'haml' in a non thread-safe way; explicit require 'haml' suggested.
+2012-07-23T16:06:30+00:00 app[web.1]: LoadError - no such file to load -- haml:
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt/template.rb:108:in `require'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt/template.rb:108:in `require_template_library'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt/template.rb:55:in `initialize'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt/haml.rb:14:in `initialize_engine'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt.rb:98:in `new'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt.rb:98:in `block in []'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt.rb:96:in `each'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:654:in `block in compile_template'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt.rb:96:in `[]'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt.rb:127:in `fetch'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:653:in `compile_template'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:635:in `render'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:532:in `haml'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-paginate-0.1.0/lib/sinatra/paginate.rb:16:in `paginate'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt/template.rb:209:in `instance_eval'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/views/index.erb:19:in `evaluate_source'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:636:in `render'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt/template.rb:209:in `evaluate_source'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:801:in `route_eval'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt/template.rb:144:in `cached_evaluate'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt/template.rb:127:in `evaluate'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `block in compile!'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/tilt-1.3.3/lib/tilt/template.rb:76:in `render'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `[]'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:822:in `block in process_route'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:1212:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `process_route'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/app.rb:94:in `block in <class:App>'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:820:in `catch'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `each'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:783:in `route!'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `invoke'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:886:in `dispatch!'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:522:in `erb'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (3 levels) in route!'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:785:in `block (2 levels) in route!'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:784:in `block in route!'
+2012
+-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `catch'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:705:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:871:in `block in invoke'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/json_csrf.rb:17:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/xss_header.rb:22:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `block in call!'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/path_traversal.rb:16:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `block in call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:1334:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:719:in `call!'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-protection-1.2.0/lib/rack/protection/base.rb:47:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/nulllogger.rb:9:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/head.rb:9:in `call'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/app/vendor/bundle/ruby/1.9.1/gems/sinatra-1.3.2/lib/sinatra/base.rb:1416:in `synchronize'
+2012-07-23T16:06:30+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+2012-07-23T16:06:30+00:00 heroku[router]: GET trackmystuff.herokuapp.com/ dyno=web.1 queue=0 wait=0ms service=130ms status=500 bytes=30
