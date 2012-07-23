@@ -9,6 +9,13 @@ body {
   float: right;
 }
 
+#errormsg {
+  color:#DC143C;
+  font-size:20px;
+  font-family: verdana,arial,sans-serif;
+  font-weight:bold  
+}
+
 /* this grid table is taked from */
 /* http://www.textfixer.com/resources/css-tables.php */
 

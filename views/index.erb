@@ -3,7 +3,7 @@
     <th>ID</th><th>NAME</th><th>TYPE</th><th>PRIMARY LOCATION</th><th>SECONDARY LOCATION</th><th>EDIT</th><th>DELETE</th>
   </tr>
 <%
-@list_items.each {|item| %>
+@result.list_items.each {|item| %>
 <tr><td><%= item.id.to_s %></td>
     <td><%= item.name %></td>
     <td><%= item.item_type %></td>
@@ -12,8 +12,10 @@
     <td><a href="/edit/<%= item.id %>"><img src="/edit.png" /></td>    
     <td><a href="/delete/<%= item.id %>"><img src="/delete.png" /></td>
 </a>
-</tr><% }
-%>
+</tr>
+<% }%>
 </table>
-
+<br>
+<%= paginate @result %>
+<br>
 <p><a href="/new">Add a New Item!</a></p>

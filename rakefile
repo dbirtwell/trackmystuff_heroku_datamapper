@@ -1,0 +1,6 @@
+  desc 'Load the seed data from db/seed_db.rb'
+  task :seed_db do
+    seed_file = "./db/seed_db.rb"
+    puts "Seeding database from: #{seed_file}"
+    load(seed_file) if File.exist?(seed_file)
+  end
